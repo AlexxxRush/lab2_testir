@@ -1,0 +1,6 @@
+D:\altstu\Testing\code\Lab2\Lab2\bin\Debug\Lab2.dll
+D:\altstu\Testing\code\Lab2\Lab2\bin\Debug\Lab2.pdb
+D:\altstu\Testing\code\Lab2\Lab2\obj\Debug\Lab2.csproj.AssemblyReference.cache
+D:\altstu\Testing\code\Lab2\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
+D:\altstu\Testing\code\Lab2\Lab2\obj\Debug\Lab2.dll
+D:\altstu\Testing\code\Lab2\Lab2\obj\Debug\Lab2.pdb
