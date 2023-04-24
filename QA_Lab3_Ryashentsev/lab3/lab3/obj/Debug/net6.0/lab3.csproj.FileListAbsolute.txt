@@ -1,0 +1,15 @@
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\bin\Debug\net6.0\lab3.exe
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\bin\Debug\net6.0\lab3.deps.json
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\bin\Debug\net6.0\lab3.runtimeconfig.json
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\bin\Debug\net6.0\lab3.dll
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\bin\Debug\net6.0\lab3.pdb
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\obj\Debug\net6.0\lab3.csproj.AssemblyReference.cache
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\obj\Debug\net6.0\lab3.GeneratedMSBuildEditorConfig.editorconfig
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\obj\Debug\net6.0\lab3.AssemblyInfoInputs.cache
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\obj\Debug\net6.0\lab3.AssemblyInfo.cs
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\obj\Debug\net6.0\lab3.csproj.CoreCompileInputs.cache
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\obj\Debug\net6.0\lab3.dll
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\obj\Debug\net6.0\refint\lab3.dll
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\obj\Debug\net6.0\lab3.pdb
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\obj\Debug\net6.0\lab3.genruntimeconfig.cache
+D:\altstu\Testing\code\lab2_testir\QA_Lab3_Ryashentsev\lab3\lab3\obj\Debug\net6.0\ref\lab3.dll
