@@ -19,7 +19,8 @@ namespace Курсовая_работа_на_шарпе
 
 	Данный класс в качестве полей содержит в себе инвентраный номер товара, количество
     стран покупающих товар и объём партии для каждой страны. 
-    ![товар](C:\Users\Alex\Downloads\1200px-Simple_cardboard_box.jpg)
+
+    ![товар](C:\Users\Alex\Downloads\korobka34.jpg)
     */
     class product : Program
     {
