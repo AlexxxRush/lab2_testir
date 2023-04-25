@@ -10,41 +10,87 @@ using System.Diagnostics;
 
 namespace Курсовая_работа_на_шарпе
 {
+    /*!
+	\brief Родительский класс, который имеет данные товара для обработки
+    \author Ряшенцев Алексей из 2021 года
+	\version 1.0
+	\date Май 2021 года
+	\warning Данный класс создан только в учебных целях
 
+	Данный класс в качестве полей содержит в себе инвентраный номер товара, количество
+    стран покупающих товар и объём партии для каждой страны. 
+    ![товар](C:\Users\Alex\Downloads\1200px-Simple_cardboard_box.jpg)
+    */
     class product : Program
     {
         private int inv_num;//инвентарный номер товара
         private int col_countr;//количество стран, покупающих товар
         private int volume;//объём продаваемой партии(в штуках) для каждой страны
 
-        public product()//конструктор без параметров
+        /*!
+            \brief Конструктор без параметров
+
+            Определяет значение по умолчанию 
+         */
+        public product()
         {
-            inv_num = -1;//определяет по умолчанию значение
+            inv_num = -1;
             col_countr = -1;
             volume = -1;
         }
-        public product(int A, int B, int C)//конструктор с параметрами
+        /*!
+            \brief Конструктор с параметрами
+
+            Определяет значение полей класса через переданные ему параметры, 
+            которые введёт польхователь
+
+            \param[in] A Инвентарный номер
+            \param[in] B Количество стран
+            \param[in] С Объём товара в штуках
+         */
+        public product(int A, int B, int C)
         {
             inv_num = A;
             col_countr = B;
             volume = C;
         }
-        public int get_inv_num()//геттер для получения инвентарного номера
+        /*!
+            \brief Геттер для получения инвентарного номера
+
+            Определяет значение инвентарного номера
+         */
+        public int get_inv_num()
         {
             return inv_num;
         }
-        public void set_country(int col_countr)//сеттер для установки значения количества стран, покупающих товар
+        /*!
+            \brief Сеттер для установки значения количества стран
+
+            Определяет значение количества стран, покупающих товар
+
+            \param[in] col_countr Количество стран
+
+         */
+        public void set_country(int col_countr)
         {
             this.col_countr = col_countr;
         }
-        public void input(string rx) //String rx - это шаблон вводимой строки
-        {//метод для ввода данных
+        /*!
+         *\brief Метод ввода информации
+         *
+         *С помощью этого метода происходит запись данных, которые введёт пользователь
+         *с клавиатуры и их проверка на корректность
+         *
+         *\param[in] rx Шаблон вводимой строки
+         */
+        public void input(string rx) 
+        {
             Console.Write("Введите инвентарный № товара: ");
             string str;
             str = Console.ReadLine();
 
 
-            inv_num = error_of_input(str, rx);//проверка функцией корректность введённых данных
+            inv_num = error_of_input(str, rx);
 
             Console.Write("Введите количество стран, покупающих товар (<=10): ");
             str = Console.ReadLine();
@@ -66,7 +112,13 @@ namespace Курсовая_работа_на_шарпе
             volume = error_of_input(str, rx);
             Console.WriteLine();
         }
-        public void output()//метод для вывода данных в консоль
+        /*!
+         *\brief Метод вывода информации
+         *
+         *С помощью этого метода происходит вывод введённых пользователем 
+         *данных в консоль
+         */
+        public void output()
         {
             Console.WriteLine("Инвентарный номер: " + inv_num);
             Console.WriteLine("Количество стран, покупающих товар: " + col_countr);
@@ -74,19 +126,43 @@ namespace Курсовая_работа_на_шарпе
             Console.WriteLine();
         }
 
-        public void diskOut(StreamWriter fout)//запись в исходный файл
+        /*!
+         *\brief Метод записи информации в текстовый файл
+         *
+         *С помощью этого метода происходит запись данных, которые введёт пользователь
+         *с клавиатуры в текстовый файл, который был изначально
+         *
+         *\param[in] fout Поток вывода
+         */
+        public void diskOut(StreamWriter fout)
         {
             fout.WriteLine(inv_num);
             fout.WriteLine(col_countr);
             fout.WriteLine(volume);
             fout.WriteLine();
         }
-        public void diskOutNew(StreamWriter fout1)//запись в новый файл
+        /*!
+         *\brief Метод записи информации в текстовый файл
+         *
+         *С помощью этого метода происходит запись данных, которые введёт пользователь
+         *с клавиатуры в новый текстовый файл, которого еще не было
+         *
+         *\param[in] fout1 Поток вывода
+         */
+        public void diskOutNew(StreamWriter fout1)
         {
             fout1.WriteLine(inv_num);
             fout1.WriteLine(col_countr);
             fout1.WriteLine();
         }
+        /*!
+         *\brief Метод считывания информации из текстового файла
+         *
+         *С помощью этого метода происходит считывание информации из изначального 
+         *текстового файла
+         *
+         *\param[in] fin Поток ввода
+         */
         public void diskIn(StreamReader fin)//считывание с исходного файла
         {
             inv_num = int.Parse(fin.ReadLine());
@@ -94,15 +170,35 @@ namespace Курсовая_работа_на_шарпе
             volume = int.Parse(fin.ReadLine());
             fin.ReadLine();
         }
-
+        /*!
+         *\brief Метод считывания информации из нового текстового файла
+         *
+         *С помощью этого метода происходит считывание информации из нового 
+         *текстового файла
+         *
+         *\param[in] fin Поток ввода
+         */
         public void newdiskIn(StreamReader fin)//считывание с нового файла
         {
             inv_num = int.Parse(fin.ReadLine());
             col_countr = int.Parse(fin.ReadLine());
             fin.ReadLine();
         }
-
-        public void excess_volume(int zadan, ref int a)//проверка превышения заданного объёма
+        /*!
+         \brief Метод, проверяющий превышение заданного объёма
+         
+        Данный метод проверяет, если заданный объём 
+        товара превышает 10 штук, то выводим предупреждение.
+        Если объём соответствует нормам, то высчитываем количество по формуле:
+        \f[
+            V = 1 + 2 + ... + a
+        \f]
+        \param[in] zadan Заданный предел объёма
+        \param[out] a Количество штук товара
+        
+        
+         */
+        public void excess_volume(int zadan, ref int a)
         {
 
             if (volume > zadan)
@@ -120,6 +216,16 @@ namespace Курсовая_работа_на_шарпе
         }
     }
 
+
+    /*!
+	\brief Родительский класс, который имеет код основной программы
+    \author Ряшенцев Алексей из 2021 года
+	\version 1.0
+	\date Май 2021 года
+	\warning Данный класс создан только в учебных целях
+
+	Данный класс содержит основную программу. Отсюда вызываются все методы, создаются все объекты классов
+    */
     class Program
     {
         public static int error_of_input(string str, string rx)//функция для проверки корректности вводимых данных
